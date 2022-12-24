@@ -1,20 +1,26 @@
+// Función que permite al chatbot responder a las preguntas del usuario
 function talk() {
-    var know = {
-        "Who are you": "Hello, Codewith_random here ",
-        "How are you": "Good :)",
-        "What can i do for you": "Search CodeWithRandom on Google>>Thank Me Later",
-        "Your followers":
-            "I have my family of 200000 members, i don't have follower ,have supportive Famiy ",
-        ok: "Thank You So Much ",
-        Bye: "Okay! Will meet soon..",
-    };
-    var user = document.getElementById("userBox").value;
-    document.getElementById("chatLog").innerHTML = user + "<br>";
-    if (user in know) {
-        document.getElementById("chatLog").innerHTML = know[user] + "<br>";
-    } else {
-        document.getElementById("chatLog").innerHTML =
-            "Sorry,I didn't understand <br>";
-    }
-}
+	// Objeto que contiene preguntas y respuestas predefinidas para el chatbot
+	var know = {
+		'¿Quién eres?': 'Hola, soy Chatbot de Isabella EA ',
+		'¿Cómo estás?': 'Bien :)',
+		'¿Cuántos seguidores tienes?':
+			'Tengo mi familia de 200000 miembros, no tengo seguidores, tengo una familia de apoyo ',
+		ok: 'Muchas gracias ',
+		Bye: '¡De acuerdo! Nos vemos pronto..',
+	};
 
+	// Obtiene el valor de la pregunta del usuario desde el elemento de entrada
+	var user = document.getElementById('userBox').value;
+
+	// Muestra la pregunta del usuario en el elemento de chat
+	document.getElementById('chatLog').innerHTML = user + '<br>';
+
+	// Si la pregunta del usuario está en el objeto know, muestra la respuesta correspondiente
+	if (user in know) {
+		document.getElementById('chatLog').innerHTML = know[user] + '<br>';
+	} else {
+		// Si la pregunta del usuario no está en el objeto know, muestra un mensaje de error
+		document.getElementById('chatLog').innerHTML = 'Lo siento, no entendí <br>';
+	}
+}
