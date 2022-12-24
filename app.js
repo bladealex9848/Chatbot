@@ -2,10 +2,23 @@
 function talk() {
 	// Objeto que contiene preguntas y respuestas predefinidas para el chatbot
 	var know = {
-		'¿Quién eres?': 'Hola, soy Chatbot de Isabella EA ',
-		'¿Cómo estás?': 'Bien :)',
+		'¿Quién eres?': 'Hola, soy el chatbot de Isabella EA',
+		'¿Cómo estás?': 'Bien, gracias :)',
+		'¿Qué puedo hacer por ti?':
+			'Puedes buscar a Isabella EA en Google >> Gracias más tarde',
 		'¿Cuántos seguidores tienes?':
-			'Tengo mi familia de 200000 miembros, no tengo seguidores, tengo una familia de apoyo ',
+			'Tengo una familia de 200000 miembros, no tengo seguidores, tengo una familia apoyadora',
+		'Buen trabajo': 'Gracias, ¡hasta luego!',
+		'¿Qué pasa?': '¡Hola de nuevo! ¿En qué puedo ayudarte hoy?',
+		'¿De dónde eres?':
+			'Soy un chatbot, así que no tengo un lugar de origen específico',
+		'¿Qué te gusta hacer?':
+			'Me gusta ayudar a las personas a hacer preguntas y obtener respuestas rápidas',
+		'¿Cuál es tu edad?': 'No tengo edad, soy un chatbot',
+		'¿Tienes una familia?':
+			'Sí, tengo una familia de 200000 miembros en Isabella EA',
+		'¿Cómo puedo contactarte?':
+			'Puedes contactarme a través de la página de Isabella en Google',
 		ok: 'Muchas gracias ',
 		Bye: '¡De acuerdo! Nos vemos pronto..',
 	};
